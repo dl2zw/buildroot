@@ -92,6 +92,10 @@ define NCURSES_LINK_LIBS_SHARED
 	)
 	ln -sf libncurses$(NCURSES_LIB_SUFFIX).so \
 		$(STAGING_DIR)/usr/lib/libcurses.so
+	ln -sf libncurses$(NCURSES_LIB_SUFFIX).so \
+		$(STAGING_DIR)/usr/lib/libtinfo.so
+	ln -sf libncurses$(NCURSES_LIB_SUFFIX).so \
+		$(STAGING_DIR)/usr/lib/libtinfo.so.6
 endef
 
 define NCURSES_LINK_PC
